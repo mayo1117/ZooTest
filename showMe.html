@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>>모든 결과 구경하기</title>
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/result.css">
+    <link rel="stylesheet" href="./css/animation.css">
+</head>
+<body>
+    <div class="grid-image">
+        <img alt="" src="./img/result-0.png" onclick="window.open(this.src)"/>
+        <img alt="" src="./img/result-1.png" onclick="window.open(this.src)"/>
+        <img alt="" src="./img/result-2.png" onclick="window.open(this.src)"/>
+        <img alt="" src="./img/result-3.png" onclick="window.open(this.src)"/>
+        <img alt="" src="./img/result-4.png" onclick="window.open(this.src)"/>
+        <img alt="" src="./img/result-5.png" onclick="window.open(this.src)"/>
+        <img alt="" src="./img/result-6.png" onclick="window.open(this.src)"/>
+        <img alt="" src="./img/result-7.png" onclick="window.open(this.src)"/>
+        <img alt="" src="./img/result-8.png" onclick="window.open(this.src)"/>
+        <img alt="" src="./img/result-9.png" onclick="window.open(this.src)"/>
+        <img alt="" src="./img/result-10.png" onclick="window.open(this.src)"/>
+        <img alt="" src="./img/result-11.png" onclick="window.open(this.src)"/>
+        <img alt="" src="./img/result-12.png" onclick="window.open(this.src)"/>
+        <img alt="" src="./img/result-13.png" onclick="window.open(this.src)"/>
+        <img alt="" src="./img/result-14.png" onclick="window.open(this.src)"/>
+        <img alt="" src="./img/result-15.png" onclick="window.open(this.src)"/>
+
+        
+        </div>
+        <button type="button" class="showMe mt-3 py-2 px-5" onClick="history.back();">뒤로가기</button >
+        
+        <style>
+        /* CSS */
+        .grid-image {
+            display:flex;
+            flex-wrap:wrap;
+            align-items:flex-start;
+            margin:30px 0;
+        }
+        .grid-image img {
+            width:calc(33.333% - 10px);
+            margin:0 15px 15px 0;
+        }
+        .grid-image img:nth-of-type(3n),
+        .grid-image img:last-child {
+            margin-right:0;
+        }
+        @media screen and (max-width:640px){
+        .grid-image img {
+            width:calc(50% - 15px);
+        }
+        }
+        @media screen and (max-width:480px){
+        .grid-image img:nth-of-type(2n) {
+            margin-right:0;
+        }
+        .grid-image img:nth-of-type(3n) {
+            margin-right:15px;
+        }
+        }
+        </style>
+</body>
+</html>

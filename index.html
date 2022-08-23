@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">   
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://u-dang-tang-zootest.netlify.app">
+
+    <!-- SNS 공유했을 때 보이는 화면 처리 -->
+    <meta property="og:url" content="https://u-dang-tang-zootest.netlify.app" />
+    <meta property="og:title" content="얼렁뚱땅 동물원 테스트" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="img/doorpic.png" />
+    <meta property="og:description" content="동물원에서 가장 어울리는 동물은 누구일까?" />
+
+    
+    <!--naver search -->
+    <meta name="naver-site-verification" content="89bff06fef4e7d09009d5a59a9dd472ce035e075" />
+
+    <!--google search -->
+    <meta name="google-site-verification" content="xjqCdlQF7StaDKkIx-hQF4n3-VoScKLd5beRkw7CTHQ" />
+
+    <!-- 파비콘 디자인, 주소창 작은 이모티콘 -->
+    <link rel="shortcut icon" href="./img/파비콘.png">
+    <limk rel="apple-touch-icon-precomposed" href="./img/파비콘.png" />
+
+    <title>얼렁뚱땅 동물원 mbti 테스트</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="preconnect" href="./fonts/Gowun_Dodum/GowunDodum-Regular.ttf">
+    <link rel="preconnect" href="./fonts/Gowun_Dodum/GowunDodum-Regular.ttf" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/qna.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./css/result.css">
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    <script>
+        Kakao.init('505599c1b4b0ca6d7f13480b50d6cfef');
+        Kakao.isInitialized();
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-17BJG681MD');
+    </script>
+</head>
+<body>
+    <div class="container">
+        <section id="main" class="mx-auto my-4 py-1 px-3">
+            <div class="col-10 col-lg-4 col-md-6 col-sm-8 mx-auto">
+                <!-- 시작화면 그림 그리기 1500 × 2700 px-->
+                <img src="./img/main.png" 
+                        alt="mainImage"class="img-fluid"> 
+            </div>
+            <button type="button" class="startButton mt-3 py-2 px-5" onclick="js:begin()">시작하기</button>
+            <br><br>
+            <!-- 참여자 수 -->
+            <script language="javascript">
+                expireDate = new Date
+                expireDate.setMonth(expireDate.getMonth()+3)
+                hitCt = eval(cookieVal("pageHit"))
+                hitCt++
+                document.cookie = "pageHit=" + hitCt + ";expires=" + expireDate.toGMTString()
+                function cookieVal(cookieName){
+                    thisCookie = document.cookie.split(";")
+                    for (i=0; i<thisCookie.length;i++){
+                        if(cookieName == thisCookie[i].split("=")[0]){
+                            return thisCookie[i].split("=")[1]
+                        }
+                    }
+                    return 0
+                }
+            </script>
+            <h6>
+                <script language="javascript" type="text/javascript">
+                    document.write("참여자 수<br>" + hitCt)
+                </script>
+            </h6>
+            <h6 class="PrettyText"> 결과에 나오는 동물들은 실제 동물이며<br>
+                                    세계자연보전연맹(IUCN)에서 멸종 위기 등급을 <br>
+                                    체계적으로 분류하여 체계적으로 정리한<br>
+                                    세계자연보전연맹 적색목록(IUCN Red List)에 기반하여 만들었습니다.
+            </h6>
+            <h6 class="PrettyText"> @ksoy1117 </h6>
+        </section>
+        <!-- 큐엔에이 창 만들기 -->
+        <section id="qna">
+            <div class="status mx-auto mt-5">
+                <div class="statusBar">
+                </div>
+            </div>
+            <div class="qBox my-5 py-3 mx-auto">
+            </div>
+            <div class="answerBox">
+            </div>
+        </section>
+        <section id="result" class="mx-auto my-1 py-1 px-3">
+            <div class="resultname">
+            </div>
+
+            <div id="resultImg" class="col-12 col-lg-4 col-md-8 col-sm-8 mx-auto">
+            </div>
+
+            <div class="resultDesc">
+            </div>
+
+            <script type="text/javascript">
+            </script>
+
+            <script type="text/javascript">
+                function moveHome(){
+                location.href="/index.html";
+                }
+            </script>
+
+            <h6 class="PrettyText"> ▲ 이미지 꾹 눌러서 저장! ▲ </h6>
+            <button type="button" class="kakao mt-3 py-2 px-5" onclick="js:setShare()">카카오톡 공유하기</button>
+            <br>
+            <button type="button" class="gohome mt-3 py-2 px-5" onclick="js:moveHome()">테스트 다시하기</button>
+            <br>
+            <button type="button" class="showMe mt-3 py-2 px-5" onclick="location.href='showMe.html'">모든 결과 구경하기</button>
+        </section>
+
+        <script src="./js/data.js" charset="utf-8"></script>
+        <script src="./js/start.js" charset="utf-8"></script>
+        <script src="./js/share.js" charset="utf-8"></script>
+
+    </div>
+</body>
+</html>

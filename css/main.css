@@ -1,0 +1,25 @@
+#main{
+    background-color: #fdfdf8;
+    width: 100%;
+    text-align: center;
+    border-radius: 20px;
+    }
+    
+    .startButton{
+    color: #ffffff;
+    background-color: #3CB371;
+    font-size: 15px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: black;
+    border: 10px;
+    }
+    
+    .startButton:hover, .startButton:focus {
+        color: white;
+    background-color: #2E8B57;
+    }
+    
+    p{
+    font-size: 30px;
+    }

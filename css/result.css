@@ -1,0 +1,65 @@
+#result{
+    display: none;
+    text-align: center;
+    }
+    
+    #shareResult{
+        width: 100%;
+        text-align: center;
+        border-radius: 20px;
+    }
+    
+    .resultname{
+        display: none;
+        font-size: 10px;
+    }
+    
+    .resultDesc{
+        font-size: 13px;
+    }
+    
+    .kakao{
+        color: #ffffff;
+        background-color: #3CB371;
+        font-size: 15px;
+        border-radius: 20px;
+        border-style: solid;
+        border-color: black;
+        border: 10px;
+    }
+    
+    .kakao:hover, .kakao:focus {
+        color: white;
+        background-color: #2E8B57;
+    }
+    
+    .gohome{
+        color: #ffffff;
+        background-color: #3CB371;
+        font-size: 15px;
+        border-radius: 20px;
+        border-style: solid;
+        border-color: black;
+        border: 10px;
+    }
+    .showMe{
+        color: #ffffff;
+        background-color: #3CB371;
+        font-size: 15px;
+        border-radius: 20px;
+        border-style: solid;
+        border-color: black;
+        border: 10px;
+        text-align: center;
+        display : block;
+        margin: auto;
+    }
+    
+    .gohome:hover, .gohome:focus {
+        color: white;
+        background-color: #2E8B57;
+    }
+    
+    .PrettyText{
+        color : grey;
+    }
